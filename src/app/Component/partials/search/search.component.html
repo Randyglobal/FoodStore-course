@@ -1,0 +1,6 @@
+<div class="search">
+    <!-- #s template reference helps you to have direct access to them everywhere in the html doc-->
+    <input #s type="text" placeholder="Search Food" 
+    (keyup.enter)="search(s.value)" [value]="searchTerm"/>
+    <button (click)="search(s.value)">Search</button>
+</div>
