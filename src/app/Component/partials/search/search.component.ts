@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core';3
 import { ActivatedRoute, Route, Router } from '@angular/router';
 
 @Component({
@@ -9,6 +9,7 @@ import { ActivatedRoute, Route, Router } from '@angular/router';
 export class SearchComponent {
    searchTerm = ''
    constructor(activatedRoute: ActivatedRoute, private route:Router){
+    // The subscriber here delivers supplementary content to user
     activatedRoute.params.subscribe((params) => {
       if(params.searchTerm)
       this.searchTerm = params.searchTerm

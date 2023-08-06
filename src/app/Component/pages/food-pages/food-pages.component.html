@@ -13,7 +13,10 @@
             <div class="rating">
                 <!-- we want to add stars in the project and we need to adda package called ng-starrating using the command npm i ng-starrating --force -->
                 <!-- After which we add it to our imports in the app.module (RatingModule) -->
-                <star-rating [value]="food.stars" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" size="25px"
+                <star-rating [value]="food.stars"
+                 [totalstars]="5" 
+                checkedcolor="red"
+                 uncheckedcolor="black" size="25px"
                     [readonly]="true">
 
                 </star-rating>
@@ -36,6 +39,6 @@
                 <span>{{food.price | currency}}</span>
             </div>
 
-            <button>Add To Cart</button>
+            <button (click)="addToCart()">Add To Cart</button>
         </div>
     </div>

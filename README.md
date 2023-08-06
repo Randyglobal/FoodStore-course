@@ -72,4 +72,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
       1. add Route
       2. Add html, css, ts
 
-9. 
+9. Cart Page
+   1. Create cartItem Model
+   2. create cart Model
+   3. Generate cart service
+   4. Add to cart button in food page
+   5. Generate cart page component
+      1. Add Route
+      2. Add html, css, ts
+      
